@@ -4,7 +4,61 @@
   <body>
     <div data-fp class="wrapper">
       @@include('html/_header.htm',{})
-      <main class="page"></main>
+      <main data-fp class="page">
+        <section data-fp-section class="page__main main-section">
+          <div class="main-section__container">
+            <div class="main-section__content">
+              <div class="main-section__title title">
+                <div class="title__label">MY NAME IS</div>
+                <h1 class="title__value title__value_big">
+                  Alex <span>Smith.</span>
+                </h1>
+              </div>
+              <div class="main-section__text text">
+                <p>
+                  Creative front-end developer with more than +5 years of
+                  experience in enterprise companies and startups. Proficient in
+                  JavaScript, Angular, and React. Passionate about UI/UX
+                </p>
+              </div>
+              <ul class="main-section__social social">
+                <li class="social__item">
+                  <a href="#" class="social__link _icon-s-instagram"></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link _icon-s-git"></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link _icon-s-twitter"></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link _icon-s-linkedin"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-section__decor decor-main-section">
+              <div class="decor-main-section__box">
+                <div class="decor-main-section__image">
+                  <img
+                    class="decor-main-section__picture"
+                    src="@img/main/picture.png"
+                    alt="Picture"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-fp-section class="page__services services">
+          <div class="services__container">
+            <div class="services__title title">
+              <div class="title__label">SERVICES</div>
+              <h2 class="title__value">Specialized in</h2>
+            </div>
+            <div class="services__item"></div>
+          </div>
+        </section>
+      </main>
       @@include('html/_footer.htm',{})
     </div>
     @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
