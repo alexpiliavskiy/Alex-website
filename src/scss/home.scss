@@ -476,5 +476,105 @@
   }
 }
 //========================================================================================================================================================
+.blog {
+  // .blog__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: rem(80);
+    padding-bottom: rem(30);
+  }
+  // .blog__title
+  &__title {
+    @include adaptiveValue("margin-bottom", 144, 30);
+  }
+  // .blog__items
+  &__items {
+    align-self: stretch;
+    display: grid;
+    @include adaptiveValue("gap", 40, 20);
+    grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
+  }
+  // .blog__item
+  &__item {
+  }
+}
+.item-blog {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: rem(8);
+  overflow: hidden;
+  border: rem(1) solid #f1f1f1;
+  // .item-blog__image-ibg
+  &__image-ibg {
+    overflow: hidden;
+    padding-bottom: percent(243, 361);
+    img {
+      transition: transform ease 0.8s 0s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  // .item-blog__body
+  &__body {
+    padding: rem(16) rem(16) rem(24) rem(16);
+    display: grid;
+    gap: rem(16);
+  }
+  // .item-blog__title
+  &__title {
+  }
+  // .item-blog__link-title
+  &__link-title {
+    color: $mainColor;
+    font-family: "Plus Jakarta Sans";
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: math.div(24, 16);
+    transition: color ease 0.3s 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $purpleColor;
+        text-decoration: underline;
+      }
+    }
+  }
+  // .item-blog__date
+  &__date {
+    justify-self: start;
+  }
+  // .item-blog__text
+  &__text {
+    color: $greyColor;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: math.div(32, 16);
+  }
+  // .item-blog__link
+  &__link {
+    justify-self: center;
+    margin-top: rem(24);
+    color: $greyColor;
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: math.div(17, 14);
+    transition: color ease 0.3s 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $purpleColor;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+//========================================================================================================================================================
 
 //========================================================================================================================================================
