@@ -9,6 +9,9 @@
   // .page__portfolio
   &__portfolio {
   }
+  // .page__career
+  &__career {
+  }
 }
 //========================================================================================================================================================
 .title {
@@ -37,17 +40,17 @@
   &__value {
     color: $mainColor;
     font-family: "Plus Jakarta Sans";
-    font-size: rem(36);
     font-weight: 700;
     line-height: 1.25;
+    @include adaptiveValue("font-size", 36, 28);
     span {
       color: $purpleColor;
     }
     // title__value_big
     &_big {
-      font-size: rem(44);
       font-weight: 700;
       line-height: math.div(55, 44);
+      @include adaptiveValue("font-size", 44, 36);
     }
   }
 }
