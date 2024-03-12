@@ -97,8 +97,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: rem(80);
     padding-bottom: rem(30);
+    padding-top: rem(80);
   }
   // .services__title
   &__title {
@@ -117,37 +117,35 @@
   &__item {
   }
 }
-.item-services {
+.item-service {
   border-radius: rem(8);
   background-color: #fff;
   @include adaptiveValue("padding", 50, 15);
   display: grid;
   justify-items: center;
   text-align: center;
-  // .item-services__icon
+  // .item-service__icon
   &__icon {
     width: rem(56);
     height: rem(56);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: rem(16);
+    border-radius: 50%;
     background-color: #f5f3fe;
     &:not(:last-child) {
       margin-bottom: rem(24);
     }
   }
-  // .item-services__title
+  // .item-service__title
   &__title {
-    color: $mainColor;
-    font-family: "Plus Jakarta Sans";
     font-weight: 500;
     line-height: math.div(20, 16);
     &:not(:last-child) {
       margin-bottom: rem(16);
     }
   }
-  // .item-services__text
+  // .item-service__text
   &__text {
     font-size: rem(14);
     line-height: math.div(24, 14);
